@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/fred/dev/avent-of-code-2023/1-day/build",
+  "command": "/usr/bin/cc   -std=gnu2x -o CMakeFiles/main.dir/main.c.o -c /home/fred/dev/avent-of-code-2023/1-day/main.c",
+  "file": "/home/fred/dev/avent-of-code-2023/1-day/main.c",
+  "output": "CMakeFiles/main.dir/main.c.o"
+}
+]
