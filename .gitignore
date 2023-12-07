@@ -3,3 +3,5 @@
 **/**/input.txt
 **/**/input-teste.txt
 **/**/out.txt
+**/**/Cargo.lock
+**/**/target/
