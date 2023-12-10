@@ -111,6 +111,9 @@ int main() {
         sum += get_sum_line(grid[i], sizes[i], i, line_n);
     }
 
+    for (int i = 0; i < line_n; i++) { free(grid[i]); }
+    free(grid);
+    free(sizes);
     printf("sum %d\n", sum);
 
     fclose(input);

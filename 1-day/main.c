@@ -143,7 +143,7 @@ int main() {
         char* line = NULL;
         size_t size = 0;
         size = getline(&line,  &size, input);
-        if (feof(input)) break;
+        if (feof(input)) { free(line); break; }
 
         size_t pos[4] = {0};
         int nums[] = {-1, -1, -1, -1};
@@ -181,6 +181,7 @@ int main() {
         debug++;
     } while(!feof(input));
 
+    fclose(input);
     printf("SUM: %zu\n", sum);
 
 #endif

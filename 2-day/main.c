@@ -54,7 +54,7 @@ int main() {
         size_t size = 0;
         line = NULL;
         size = getline(&line, &size, input);
-        if (feof(input)) break;
+        if (feof(input)) { free(line); break; }
 
         struct Game_t game = {0};
         sscanf(line, "Game %d", &game.id);
